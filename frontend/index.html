@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spectra AI Assistant</title>
+        <link rel="stylesheet" href="./static/style.css">
+        <link rel="icon" type="image/x-icon" href="../assets/logocelebro.png">
+    </head>
+    <body>
+        <nav>
+            <div class="navbar">
+                <a href="#chat-section" class="logo">
+                    <span class="logo-img-bg"><img src="./assets/Spectra AI Assistant.png" alt="logo"></span>
+                    <span class="status-badge">Beta</span>
+                    <span class="logo-text">Spectra AI Assistant</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#chat-section">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="https://github.com/BrunoSouzz">GitHub</a></li>
+                    <li><a href="#https://bruno-amorim-portifolio.vercel.app/">Portifólio</a></li>
+                </ul>
+                <button id="theme-toggle">🌙</button>
+                <button class="menu-toggle">☰</button>
+            </div>
+        </nav>
+        <section id="chat-section">
+            <div id="chat-history" aria-live="polite"></div>
+            <form id="chat-form" autocomplete="off">
+                <label for="user-input" class="sr-only">Digite sua dúvida</label>
+                <input type="text" id="user-input" placeholder="Tire sua dúvida aqui..." autocomplete="off" aria-label="Digite sua mensagem" required>
+                <button type="submit" id="send-btn" aria-label="Enviar mensagem"><svg width="20" viewBox="0 0 24 24" fill="none"> <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor"/></svg></button>
+            </form>
+            <div id="typing-indicator">Spectra está Pensando...</div>
+        </section>
+        <section id="about">
+            <h2>Sobre o Spectra AI Assistant</h2>
+            <p>O Spectra AI Assistant é um chatbot inteligente desenvolvido para fornecer respostas rápidas e precisas às suas dúvidas. Ele utiliza tecnologias avançadas de processamento de linguagem natural para entender suas perguntas e oferecer soluções eficazes.</p>
+            <p>Nosso objetivo é criar uma experiência de usuário fluida e intuitiva, permitindo que você obtenha as informações que precisa de forma rápida e fácil. O Spectra está em constante evolução, aprendendo com cada interação para melhorar suas respostas ao longo do tempo.</p>
+        </section>
+        <section class="footer-section">
+            <footer>&copy; 2026 Dev-BrunoAmorim. Todos os direitos reservados.</footer>
+        </section>
+        <script src="static/botoes.js" defer></script>
+        <script src="static/script.js" defer></script>
+    </body>
+</html>
